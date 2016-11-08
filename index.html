@@ -8,6 +8,19 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://github.com/hilios/jQuery.countdown/blob/master/dist/jquery.countdown.js"></script>
+    <script src="https://github.com/hilios/jQuery.countdown/blob/master/dist/jquery.countdown.min.js"></script>
+    <script type="text/javascript">
+    $("#getting-started")
+    .countdown("2017/01/01", function(event) {
+      $(this).text(
+        event.strftime('%D days %H:%M:%S')
+      );
+    });
+  </script>
   </head>
   <body>
     <section class="page-header">
