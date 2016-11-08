@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>P.S. I Love You</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://github.com/hilios/jQuery.countdown/blob/master/dist/jquery.countdown.js"></script>
+  <script src="https://github.com/hilios/jQuery.countdown/blob/master/dist/jquery.countdown.min.js"></script>
+</head>
+<body>
+
+<div id="container">
+  <div id="getting-started"></div>
+  <script type="text/javascript">
+    $("#getting-started")
+    .countdown("2017/01/01", function(event) {
+      $(this).text(
+        event.strftime('%D days %H:%M:%S')
+      );
+    });
+  </script>
+</div>
+
+</body>
+</html>
